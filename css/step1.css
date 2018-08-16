@@ -47,6 +47,13 @@ nav {
     color: #0066f4;
     font-weight: 400;
 }
+.image p a:hover {
+    color: #212121;
+    transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -webkit-transition:all 0.3s ease-in; 
+
+}
 .signup {
     width: 490px;
     margin-left: 135px;
@@ -89,6 +96,13 @@ nav {
     width: 124px;
     font-size: 2em;
     letter-spacing: 2px;
+}
+.form button:hover {
+    background-color: #0066f4;
+    transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -webkit-transition:all 0.3s ease-in; 
+
 }
 
 /* footer styles */

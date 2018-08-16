@@ -64,6 +64,8 @@ nav {
     border-radius: 0;
     width: 230px;
     height: 70px;
+    text-align: center;
+    font-size: 4.8em;
 }
 .resend {
     display: inline-block;
@@ -72,6 +74,14 @@ nav {
     font-size: 2em;
     font-weight: 500;
     margin: 48px 0 0;
+}
+.resend:hover {
+    text-decoration: none;
+    color: #212121;
+    transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -webkit-transition:all 0.3s ease-in; 
+
 }
 
 /* footer styles */
