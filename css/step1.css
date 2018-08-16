@@ -20,6 +20,8 @@ body {
 }
 nav {
     max-width: 1190px;
+    margin: 0;
+    padding: 0;
     margin: auto;
 }
 

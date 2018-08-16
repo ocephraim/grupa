@@ -20,6 +20,8 @@ body {
 }
 nav {
     max-width: 1190px;
+    margin: 0;
+    padding: 0;
     margin: auto;
 }
 
@@ -65,7 +67,9 @@ nav {
     width: 230px;
     height: 70px;
     text-align: center;
-    font-size: 4.8em;
+    font-size: 4.2em;
+    font-weight: 300;
+    letter-spacing: 5px;
 }
 .resend {
     display: inline-block;
