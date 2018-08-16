@@ -27,14 +27,13 @@ nav {
 
 /* section styles */
 .main {
-    width: 490px;
+    max-width: 490px;
     margin: auto;
     margin-top: 104px;
 }
 .title {
     font-size: 3.6em;
     font-weight: 300;
-    text-align: left;
     margin-bottom: 0;
 }
 .subtitle {

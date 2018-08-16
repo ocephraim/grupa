@@ -10,6 +10,41 @@
         <link rel="stylesheet" type="text/css" media="screen" href="/css/step3.css" />
     </head>
 <body>
-    
+    <section class="navigation">      
+        <nav class="navbar container">
+            <div class="navbar-header">
+                <a href="../index.html" class="navbar-brand"><img src="/assets/logo.png" alt="grupa"></a>
+            </div><!--navbar-header-->
+            <div class="navbar-nav navbar-expand "><img src="/assets/menu.svg" alt="menu">
+            </div><!--navbar-nav-->
+        </nav><!--navbar-->
+    </section><!--navigation-->
+    <section class="main container">
+        <p class="title">Set your password</p>
+        <form action="" class="pass">
+            <div class="form-group">
+                <label for="password">Password</label>
+                <div class="pass-field">
+                    <input type="password" class="form-control" name="password" placeholder="Password">
+                    <img src="/assets/eye.svg" alt="eye">
+                </div><!--pass-field-->
+            </div><!--form-group-->
+            <section class="pass-strength">
+                <div><p>Password strength</p></div>
+                <div class="bars">
+                    <div class="strength-bar"></div>
+                    <div class="strength-bar"></div>
+                    <div class="strength-bar"></div>
+                </div>
+            </section><!--pass-strength-->
+            <section class="info">
+                <p class="pass-info">Password must be at least 8 characters, and must contain one uppercase letter, number, and symbol.</p><!--pass-info-->
+                <p class="terms">By continuing you agree to our <a href="">Terms of Service</a> and <a href="">Privacy Policy</a></p>
+            </section><!--info-->
+            <a href="step4.html">
+                <button type="button" class="btn">Continue to Create Team</button>
+            </a>
+        </form><!--pass-->
+    </section><!--main-->    
 </body>
 </html>
