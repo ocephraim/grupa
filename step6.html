@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/step1.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/step6.css" />
 </head>
 <body>
     <section class="navigation">      
@@ -20,14 +20,16 @@
         </nav><!--navbar-->
     </section><!--navigation-->
     <section class="main container">
+        <section class="head">
+            <p>You accepted the invitation to join TechSplash on Grupa</p>
+        </section><!--head-->
         <div class="row">
             <section class="image">
-                <img src="/assets/developersignup.png" alt="signup">
-                <p>Already have an account? <a href="">Login</a></p>
+                <img src="/assets/jointeam.png" alt="jointeam">
             </section><!--image-->
             <section class="signup">
                 <h2 class="title">Sign Up to Continue</h2>
-                <form action="" class="form">
+                <form action="" class="input">
                     <div class="form-group">
                         <label for="name">Full name</label>
                         <input type="text" class="form-control" id="name" placeholder="John Doe">
@@ -36,24 +38,32 @@
                         <label for="email">Email address</label>
                         <input type="email" class="form-control" id="email" placeholder="youremail@example.com">
                     </div>
-                    <a href="step2.html">
+                    <section class="form-group">
+                        <label for="password">Password</label>
+                        <div class="pass-field">
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                            <img src="/assets/eye.svg" alt="eye">
+                        </div><!--pass-field-->
+                    </section><!--form-group-->
+                    <section class="pass-strength">
+                        <div><p>Password strength</p></div>
+                        <div class="bars">
+                            <div class="strength-bar"></div>
+                            <div class="strength-bar"></div>
+                            <div class="strength-bar"></div>
+                        </div>
+                    </section><!--pass-strength-->
+                    <section class="info">
+                        <p class="pass-info">Password must be at least 8 characters, and must contain one uppercase letter, number, and symbol.</p><!--pass-info-->
+                        <p class="terms">By continuing you agree to our <a href="">Terms of Service</a> and <a href="">Privacy Policy</a></p>
+                    </section><!--info-->
+                    <a href="step7.html">
                         <button type="button" class="btn">Next</button>
                     </a>
-                </form><!--form-->
+                </form><!--input-->
             </section><!--signup-->
         </div><!--row-->  
     </section><!--main-->
-    <!-- <footer>
-        <hr>
-        <div class="footercontent">
-            <div class="copy">
-                <p><Span>&copy;</Span> Grupa 2018</p> 
-            </div>
-            <div class="links">
-                <a href="">Contact Us</a>
-                <a href="">About Us</a>
-            </div>
-        </div>
-    </footer>   -->
+    
 </body>
 </html>
