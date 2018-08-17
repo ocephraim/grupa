@@ -8,6 +8,7 @@ body {
     font-family: 'Ubuntu', sans-serif;
     color: #212121;
     height: 100vh;
+    position: relative;
 }
 
 /* Navbar Styles */
@@ -28,17 +29,28 @@ nav {
 /* section styles */
 .main{
  margin: auto;
- margin-top: 72px;
+ margin-top: 104px;
  max-width: 1190px;
 }
 .row {
     max-width: 970px;
     margin: auto;
 }
+.row2 {
+    max-width: 1020px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+}
 .image img {
     margin-bottom: 60.8px;
     height: 296.2px;
     margin-top: 54px;
+}
+.image-join img {
+    margin-top: 138px;
 }
 .image p {
     font-size: 2em;
@@ -60,19 +72,32 @@ nav {
     width: 490px;
     margin-left: 135px;
 }
-.form {
-    margin-top: 72px;
+.signup2 {
+    width: 490px;
+    margin-left: 97px;
 }
 .title {
     font-size: 3.6em;
     margin: 0;
-    font-weight: 300 
+    font-weight: 300;
+    padding: 0; 
+}
+.input {
+    margin-top: 72px;
+}
+.input label, .headline {   
+    padding: 0;
+    margin:0 0 8px;
+    font-size: 1.6em;
+    font-weight: 500;
+}
+.form-group {
+    padding: 0;
+    margin: 0;
 }
 .form-control {
     border-radius: 0;
-    margin-top: 0;
-    padding-top: 0;
-    margin-bottom: 48px;
+    margin: 0 0 48px;
     height: 50px;
     font-size: 1.8em;
     font-weight: 300;
@@ -87,14 +112,7 @@ nav {
     -webkit-transition: all 1s ease-in;
     -moz-transition: all 1s ease-in;
 }
-.form-group label {    
-    padding-bottom: 0;
-    margin-bottom: 4px;
-    font-size: 1.6em;
-    font-weight: 500;
-}
-
-.form button {
+.btn {
     color: #ffffff;
     background-color: #212121;
     float: right;
@@ -104,34 +122,212 @@ nav {
     font-size: 1.8em;
     letter-spacing: 2px;
     border-radius: 5px;
+    margin-bottom:104px;
 }
-.form button:hover {
+.btn:hover {
     background-color: #0066f4;
+    transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -webkit-transition:all 0.3s ease-in; 
+}
+/* step 2 */
+.main2 {
+    margin: auto;
+    margin-top: 104px;
+    max-width: 490px;
+}
+.subtitle {
+    font-size: 1.8em;
+    margin-top: 32px;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+.input2 {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 64px;
+    margin-bottom: 0;
+}
+.divider {
+    font-size: 2em;
+    margin-bottom: 9%;
+    font-weight: 300;
+    padding: 0 8px;
+}
+.pin {
+    border-radius: 0;
+    width: 230px;
+    height: 70px;
+    text-align: center;
+    font-size: 4.2em;
+    font-weight: 300;
+    letter-spacing: 5px;
+}
+.resend {
+    display: inline-block;
+    text-decoration: none;
+    color: #0066f4;
+    font-size: 2em;
+    font-weight: 500;
+}
+.resend:hover {
+    text-decoration: none;
+    color: #212121;
     transition: all 0.3s ease-in;
     -moz-transition: all 0.3s ease-in;
     -webkit-transition:all 0.3s ease-in; 
 
 }
-
-/* footer styles */
-/* footer {
-    max-width: 1190px;
-    font-size: 1.6em;
-    margin: auto;
-    margin-top: 64px;
+/* password */
+.content {
+    max-width: 490px;
+    margin: 0 auto;
 }
-.footercontent {
+.pass-field {
+    position: relative;
+    height: 50px;
+}
+.pass-field img {
+    position: absolute;
+    top: 30%;
+    right: 12px;
+}
+.pass-strength {
     margin-top: 16px;
+    font-size: 1.4em;
     display: flex;
     display: -webkit-flex;
     display: -moz-flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
+}
+.pass-strength p {
+    margin: 0;
+    padding: 0;
+}
+.strength-bar {
+    background-color: #c4c4c4;
+    display: inline-block;
+    height: 4px;
+    width: 95px;
+    border-radius: 5px;
+}
+.pass-info {
+    margin-top: 8px;
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+.terms {
+    margin-top: 40px;
+    font-size: 1.6em;
+    margin-bottom: 48px;
+}
+.terms a {
+    color: #0066f4;
     font-weight: 500;
 }
-.links a {
-    margin-left: 16px;
+.terms a:hover {
     text-decoration: none;
     color: #212121;
-} */
-
+    transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -webkit-transition:all 0.3s ease-in;    
+}
+.btn-long {
+    float: right;
+    clear: both;
+    background: #212121;
+    color: #ffffff;
+    height: 50px;
+    width: 352px;
+    font-size: 1.8em;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+/* step 4 */
+.progress {
+    background: none;
+    display: flex;
+    align-items: center;
+    margin: 53px 0 32px;
+}
+.progress p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+.indicator {
+    border-radius: 50%;
+    background: #212121;
+    width: 8px;
+    height: 8px;
+    margin-left: 16px;
+}
+.progress .next {
+    margin-left: 12px;
+    opacity: 0.2
+}
+.bond {
+    margin-top: 48px;
+}
+.teammates {
+    margin-top: 48px;
+}
+.sub-head {
+    font-size: 1.4em;
+    font-weight: 300;
+    margin-bottom: 24px;
+}
+.col-12 {
+    width: 143px;
+    height: 47px;
+    border: 1px #0066f4 dotted;
+    background: #f7f7f7;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 1.4em;
+    font-weight: 300;
+}
+.col-12 p {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.image2 img {
+    width: 350px;
+    position: absolute;
+    left: 1%;
+    top: 55%;
+}
+.faded img {
+    left: 70%;
+    opacity: 0.1;
+}
+/* step 5 */
+.btn-medium {    
+    height: 50px;
+    width: 230px;
+}
+/* step 6 */
+.head {
+    text-align: center;
+    font-size: 1.4em;
+    margin: 53px 0 32px;
+}
+/* step 7 */
+.input-group {
+    margin-bottom: 48px;
+}
+.small {
+    font-size: 1.6em;
+    font-weight: 300;
+    margin: -40px 0 48px;
+}
