@@ -8,6 +8,7 @@ body {
     font-family: 'Ubuntu', sans-serif;
     color: #212121;
     height: 100vh;
+    position: relative;
 }
 
 /* Navbar Styles */
@@ -26,99 +27,96 @@ nav {
 }
 
 /* section styles */
-.main {
-    max-width: 490px;
+.content {
     margin: auto;
-    margin-top: 96px;
+    max-width: 490px;
+}
+.progress {
+    background: none;
+    display: flex;
+    align-items: center;
+    margin-top: 53px;
+}
+.progress p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+.indicator {
+    border-radius: 50%;
+    background: black;
+    width: 8px;
+    height: 8px;
+    margin-left: 16px;
+}
+.progress .next {
+    margin-left: 12px;
+    opacity: 0.2
 }
 .title {
+    margin: 0;
+    padding: 0;
+    margin-top:32px;
     font-size: 3.6em;
     font-weight: 300;
-    margin-bottom: 0;
-}
-.pass {
-    margin-top: 64px;
 }
 .form-group {
     margin: 0;
     padding: 0;
 }
-.pass label {
+.input {
+    margin-top: 64px;
+}
+.input label, .headline {    
+    padding-bottom: 0;
+    margin-bottom: 8px;
     font-size: 1.6em;
     font-weight: 500;
-    margin: 0;
-    padding: 0;
+}
+.bond {
+    margin-top: 48px;
 }
 .form-control {
-    margin-top: 8px;
-    margin-bottom: 0;
-    padding-bottom: 0;
     border-radius: 0;
     height: 50px;
     font-size: 1.8em;
     font-weight: 300;
 }
-.form-control:focus {
+.form-control:focus{
     box-shadow: none;
     border: 1px #0066f4 solid;
     transition: all 1s ease-in;
     -webkit-transition: all 1s ease-in;
     -moz-transition: all 1s ease-in;
 }
-.pass-field {
-    position: relative;
-    height: 50px;
+.headline {
+    margin-top: 48px;
 }
-.pass-field img {
-    position: absolute;
-    top: 30%;
-    right: 12px;
-}
-.pass-strength {
-    margin-top: 8px;
+.sub-head {
     font-size: 1.4em;
-    display: flex;
-    display: -webkit-flex;
-    display: -moz-flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-.pass-strength p {
-    margin: 0;
-    padding: 0;
-}
-.strength-bar {
-    background-color: #c4c4c4;
-    display: inline-block;
-    height: 4px;
-    width: 95px;
-    border-radius: 5px;
-}
-.pass-info {
-    margin-top: 8px;
-    font-size: 1.2em;
     font-weight: 300;
-    margin-bottom: 0;
+    margin-bottom: 24px;
 }
-.terms {
-    margin-top: 40px;
-    font-size: 1.6em;
-    margin-bottom: 0;
+.col-12 {
+    width: 143px;
+    height: 47px;
+    border: 1px #0066f4 dotted;
+    background: #f7f7f7;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 1.4em;
+    font-weight: 300; 
 }
-.terms a {
-    color: #0066f4;
-    font-weight: 500;
+.col-12 p {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
-.terms a:hover {
-    text-decoration: none;
-    color: #212121;
-    transition: all 0.3s ease-in;
-    -moz-transition: all 0.3s ease-in;
-    -webkit-transition:all 0.3s ease-in;    
-}
-.pass button {
+.input button {
     margin-top: 64px;
+    margin-bottom: 24px;
     float: right;
     clear: both;
     background: #212121;
@@ -129,9 +127,19 @@ nav {
     letter-spacing: 1px;
     border-radius: 5px;
 }
-.pass button:hover {
+.input button:hover {
     background-color: #0066f4;
     transition: all 0.3s ease-in;
     -moz-transition: all 0.3s ease-in;
     -webkit-transition:all 0.3s ease-in; 
+}
+.image img {
+    width: 389px;
+    position: absolute;
+    left: 1%;
+    top: 55%;
+}
+.faded img {
+    left: 70%;
+    opacity: 0.1;
 }
